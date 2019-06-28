@@ -1,0 +1,112 @@
+<ion-view view-title="Pokemon App.">
+  <ion-content class="padding">
+
+
+  <div class="container">    
+      <div class="content">
+        <hgroup>          
+          <h1 class="h1">Pokemon.</h1>
+          <h3>Company LCM.</h3>
+          <img class="imgfo" src="../img/bola.gif" alt="pokemon">
+        </hgroup>
+     </div>
+    <form class="form" action="" method="GET">
+
+
+      <div class="buttons">
+         <a href="#" data-sesion="1">Inicio por correo  </a>
+         <a href="#" data-sesion="2">Sesión rápida  </a>
+         
+      </div>
+
+      <div class="formContent">
+         <div class="forms visible active" tabindex="1">
+           <div class="fields">
+              <div class="input">
+                  <span class="fa fa-user"></span>
+                  <input type="email" name="email" id="email" placeholder="Usuario.">
+              </div>
+              <div class="input">
+                <span class="fa fa-lock"></span>
+                  <input type="password" name="password" id="password" placeholder="Contraseña.">
+              </div>
+            </div>
+
+            <div class="ui_submitbtn">Iniciar Sesion</div>
+            <div class="msg_error"></div>
+         </div>
+          <div class="forms hide" tabindex="2">
+            <div class="fields">
+              <div class="input">
+                  <span class="fa fa-user"></span>
+                  <input type="text" name="nameR" id="name" placeholder="Usuario.">
+              </div>
+              <div class="input">
+                  <span class="fa fa-image"></span>
+                  <input type="text" name="imgR" id="img" placeholder="Link de la Imagen.">
+              </div>
+              <div class="input">
+                  <span class="fa fa-address-card-o"></span>
+                  <input type="email" name="emailR" id="email" placeholder="Correo.">
+              </div>
+              <div class="input">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" name="passwordR" id="password" placeholder="Contraseña.">
+              </div>
+            </div>
+            <div class="ui_submitbtn">Registrarse</div>
+            <div class="msg_error"></div>
+        </div>
+
+         <div class="content_img hide" tabindex="3">
+
+            <div class="ui_card img">
+               <span class="fa fa-time"></span>
+              <div class="image ">
+                <figure class="session">
+                  <img src="../img/gerson.jpg">
+                  <figcaption class="session">@gersondani2001</figcaption>
+                </figure>
+              </div>
+            </div>
+         </div>   
+      </div>
+       
+    </form>
+       <section class="modalogin hidden">
+          <div class="contentModal">
+            <a class="closeModal" >
+              <span class="fa fa-close" onclick="this.parentNode.parentNode.parentNode.classList.remove('show'); 
+               " ></span>
+            </a>
+
+            <div class="ui_card img">            
+              <div class="image">
+                <figure>
+                  <img src="" alt="" />
+                  <figcaption></figcaption>
+                </figure>
+              </div>
+          </div>
+
+
+           <div class="forms">
+            <div class="fields">
+               <div class="input">
+                  <span class="fa fa-lock"></span>
+                  <input type="password"/>
+               </div>
+               <div class="ui_submitbtn">Iniciar Sesion</div>
+               <div class="msg_error"></div>
+            </div>
+           </div>
+          </div>
+      </section>        
+
+    <div class="ui_msg">
+      <span>¿Erés nuevo por aquí? </span> <a href="#" data-login="registrarse">Regístrate   </a>
+    </div>
+  </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,403 @@
+/* Empty. Add your own CSS if you like */
+.padding{
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding:5% 1%;
+/*  transform: translateY(-15%);  */
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-family: Roboto, "Arial",sans-serif;}
+.content {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;}
+.content > hgroup{
+  color: rgb(230,230,230);
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: .5px;
+  padding-top: 1% ; 
+}
+.h1{
+  padding-bottom:4px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(230,230,230);
+  font-size: 25px;
+}
+
+/* === Estilo para form inputs, span y elemento a === */
+form{
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px; 
+  height: 100%;
+  min-height: 250px;
+  max-height: 500px;
+  margin: auto;
+  padding: 10px;
+  background: #FFF;
+  position: relative; /*Super importante no quitar esto*/
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 10px;}
+
+
+/* == Estilo para btns principales == */
+form > .buttons{
+  position: relative;
+  background: transparent;  
+  display: flex;
+  justify-content: flex-end;}
+form > .buttons a{
+  width: 100%;
+  max-width: 170px;
+  padding: 10px 15px;
+  margin-top: 6px;
+  margin-right: 4px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto",sans-serif;}
+form > .buttons a:hover{ opacity: .8; }
+form > .buttons > span::before{
+  content: "or";
+  position: absolute;
+  top: 25%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateX(-640%);
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #FFF;
+  color: rgba(0, 0, 0, 0.50);
+  z-index: 100;
+  display: block;}
+
+form .buttons a:nth-child(2){
+  background-color: yellow;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: bold;
+  border-left: 3px solid #FFF;}
+
+form .buttons a:nth-child(1){
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: 3px solid #FFF;}
+
+/* == Estilo para input type[text,pass,email] == */
+.forms{
+  outline: none;
+}
+.forms > .fields .input{
+  position: relative;
+  margin: 10px 0;}
+.forms > .fields > .input span{
+  position: absolute;
+  width: 30px;
+  height: 100%;
+/*   top: 50%; */
+/*   transform: translateY(-50%) translateX(10px); */
+  color: #B7B7B7;
+  padding-bottom: 2px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.forms > .fields .input > input{
+  width: 100%;
+  height: auto;
+  padding: 10px 35px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #444;
+  outline: none;}
+
+form{
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+form >.formContent{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 25px 0;
+  min-height: 150px;
+  max-height: 500px; }
+form > .formContent > div{
+  position: relative;
+  width: 100%;
+  display: block;
+  opacity: 0;
+   -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+form > .formContent  div.hide{ display: none; }
+form > .formContent  div.visible{  
+  opacity: 1;  
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%); }
+
+
+
+.imgfo{
+	width: 350px;
+	height: 200px;
+}
+
+/*Submit not use*/
+.ui_submitbtn,
+input[type="submit"]{
+  padding: 10px 40px;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background: black;
+  color: #FFF;
+  border-radius: 3px;
+	
+}
+.ui_submitbtn{
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Roboto",sans-serif;
+  outline: none;}
+.ui_submitbtn:hover{
+  transition: .3s ease;
+  opacity: .8;
+  background: skyblue;
+  font-weight: bold;
+}
+
+/*========= ESTILO PARA LA CAJA IAMGEN ==========*/
+
+div.content_img{
+	width: 100%;
+  outline: none;
+	display: flex;
+}
+.ui_card {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.image {
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  transition: .3s ease-out;}
+
+.image:hover{
+  transition: all .2s ease;
+  box-shadow: 2px 2px 2px 0 rgba(10,10,8,.2);}
+
+figure > img{
+  width: 100%;
+  min-width: 170px;
+  max-width: 200px;
+  height: 100%;
+  max-height: 250px;
+  min-height: 170px;
+  display: block;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  transition: .3s ease;}
+figure > img:hover{
+  cursor: pointer;
+  opacity: .8;}
+figure > figcaption{  
+  padding: 8px 0;
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  background-color: #dddddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;  }
+figure > figcaption:hover{
+  color: rgb(21, 144, 166) ;
+  font-weight: 600;
+  cursor: pointer;}
+
+/* =============  Estilo modal login =============*/
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0) translateY(-25%);
+  -moz-transform: scale(0) translateY(-25%);
+  -ms-transform: scale(0) translateY(-25%);
+  -o-transform: scale(0) translateY(-25%);
+  transform: scale(0) translateY(-25%);
+}
+.show{
+
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1) translateY(-25%);
+  -moz-transform: scale(1) translateY(-25%);
+  -ms-transform: scale(1) translateY(-25%);
+  -o-transform: scale(1) translateY(-25%);
+  transform: scale(1) translateY(-25%);
+}
+
+section.modalogin{  
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+   
+}
+
+.modalogin > .contentModal{
+  width: 100%;  
+  max-width: 500px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 0 6px 2px rgba(10,10,8,.2) inset, 0 0 10px 0 rgba(10,10,8,.1);
+  position: relative;
+  border-radius: 3px;
+}
+
+.modalogin > .contentModal .ui_card{
+  padding: 15px 0;
+  padding-top: 25px;
+	float: none;
+	display: block;
+  text-align: center;
+  pointer-events: none;
+}
+.modalogin > .contentModal .ui_card figure > figcaption{
+  background-color: #fff;
+}
+.modalogin >.contentModal > .forms .fields .input input{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.modalogin > .contentModal .fields {
+  width: 50%;
+  margin: auto;
+}
+
+.modalogin > .contentModal .ui_submitbtn{
+  maring: 0;
+  margin-top:15px;
+
+}
+
+
+/* ===============  Estilo simple close modal =============== */
+.contentModal > a:nth-of-type(1){
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.contentModal > a:nth-of-type(1) span{
+  font-size: 1.5em;
+  color: #333;
+  transition: .3s ease;
+  opacity: .8;
+}
+
+.contentModal > a:nth-of-type(1) span:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+/* ============ Estilo barra info  ================  */
+.container .ui_msg{
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ecf0f1;  
+  border-radius: 3px;
+}
+
+.container .ui_msg > a{
+  color: #007bb5;
+}
+.container .ui_msg > a:hover{
+  opacity: .8;
+}
+.container .ui_msg > span{
+  color: #333;
+}
+
+.padding2{
+  background: orange;
+}
+
+.container1{
+  background:red;
+  border:solid 5px black;
+  border-radius: 10px;
+  margin: 5% 8%; 
+}
+
+.textlal{
+  font-family: arial;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  background: purple;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.sty11{
+  padding: 5% 0;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}

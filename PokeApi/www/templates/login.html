@@ -1,0 +1,41 @@
+<ion-view view-title="Dashboard">
+
+  <ion-content class="padding2" onload="myFunction()">
+
+
+	<div class="text-center " id="pre">
+		<img src="../img/preload.gif" alt="preload" width="250" height="250" style="padding-top: 5%;padding-bottom: 5%;">		
+	</div>
+
+
+	<div id="myDiv" class="animate-bottom">
+		<h1 class="sty11">Este es el api de construccion de pokemones si quieres algun pokemon seleccionalo y buscalo segun su nombre si quiere disminuir la cantidad tambien esta la opcion. </h1>
+
+		<div class="list list-inset">
+		  <label class="item item-input">
+		    <input type="text" placeholder="Nombre del Pokemon." ng-model="nomp">
+		  </label>
+		</div>
+
+	  	<div class="container1" ng-repeat="x in poke | filter: nomp">
+
+	  		<div class="imglal text-center">
+	  			<img src="{{x.data.sprites.front_default}}" alt="pokemon">
+	  		</div>
+	  		<div class="textlal">
+	  			<p class="stypp">Nombre del Pokemon: {{x.data.name}}.</p>
+				<p class="stypp">Id del Pokemon: #{{x.data.id}}</p>
+	  			<p class="stypp">Peso del Pokemon: {{x.data.weight}}kg. </p>
+	  			<p class="stypp">Tamaño del Pokemon: {{x.data.height}} m - cm.</p>
+				<p class="stypp">Abilidades del Pokemon: {{x.data.abilities[0].ability.name}}, {{x.data.abilities[1].ability.name}}</p>
+				<p class="stypp">El Tipo de Pokemon: {{x.data.types[0].type.name}}, {{x.data.types[1].type.name}}.</p>
+	  			
+				 
+
+	  		</div>
+	  	</div>		
+	</div>
+
+
+  </ion-content>
+</ion-view>
